@@ -12,10 +12,7 @@ const randomAnagram = anagrams[Math.floor(Math.random() * anagrams.length)];
 const question = randomAnagram.question;
 const answer = randomAnagram.answer;
 
-const aCanvas = document.getElementById("anagram-canvas");
-const aCtx = canvas.getContext("2d");
-aCtx.canvas.width = window.innerWidth;
-aCtx.canvas.height = window.innerHeight * 0.99;
+
 const anagramQuestion = document.getElementById("anagram-question");
 const anagramInput = document.getElementById("anagram-input");
 
@@ -34,7 +31,10 @@ anagramInput.addEventListener("keydown", function (event) {
 });
 
 function checkAnswer() {
-  if (anagramInput.value === answer) {
+  if (anagramInput.value.toLowerCase() === answer.toLowerCase()) {
     alert("correct!");
   }
 }
+
+
+//should match no matter the case, e.g Elephant and elephant
