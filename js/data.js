@@ -71,15 +71,6 @@ const cities = [
   },
 ];
 
-const anagrams = [
-    {elephant : "help nate"},
-    {hedgehog : "egg he hod"},
-    {kangaroo : "an oak rog"},
-    {reindeer : "der ernie"},
-    {tortoise : "ire toots"},
-    {antelope : "aleen pot"},
-    {flamingo : "golf main"}
-    ]
 
 
     const poems = [

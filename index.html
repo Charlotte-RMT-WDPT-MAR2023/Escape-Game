@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" />
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="./images/duck-favicon.png">
     <link rel="stylesheet" href="styles/style.css" />
     <title>xxx</title>
   </head>
@@ -24,6 +24,15 @@
         <section id="game-screen" style="display: none">
           <canvas id="canvas"></canvas>
         </section>
+
+        <!-- anagram screen -->
+  
+        <section id="anagram-screen" style="display: block">
+          <canvas id="anagram-canvas"></canvas>
+          <div id="anagram-question"></div>
+          <input type="text" name="" id="anagram-input" />
+          <button id="btn-anagram">Enter</button>
+        </section>
   
           <!-- gameover screen -->
         <section id="gameover-screen" style="display: none">
@@ -33,9 +42,10 @@
      </main>
   
       
-      <audio id="music" src=""></audio>
+      <!--<audio id="music" src=""></audio>-->
 
 
-    <script type="text/javascript" src="./js/settings.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/anagrams.js"></script>
   </body>
   </html>
