@@ -4,6 +4,7 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = window.innerHeight * 0.99;
+let animation;
 
 //Hiding Screen function
 function togglescreen(id, toggle) {
@@ -20,15 +21,11 @@ window.onload = () => {
     togglescreen("game-screen", true);
     game();
   };
+}
 
-  const maze = [
-    ["#", " ", "#", "#", "#", "#", "#", "#"],
-    ["#", " ", "#", " ", " ", " ", " ", "#"],
-    ["#", " ", "#", " ", "#", "#", " ", "#"],
-    ["#", " ", "#", " ", " ", "#", " ", "#"],
-    ["#", " ", "#", " ", " ", "#", " ", "#"],
-    ["#", " ", "#", "#", "#", "#", " ", "#"],
-    ["#", " ", " ", " ", " ", " ", " ", "#"],
-    ["#", "#", "#", "#", "#", "#", "#", "#"],
-  ];
-};
+function game(){
+animation = requestAnimationFrame(game);
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+maze();
+
+}
