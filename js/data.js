@@ -71,7 +71,7 @@ const cities = [
   },
 ];
 
-const pnagrams = [
+const anagrams = [
     {elephant : "help nate"},
     {hedgehog : "egg he hod"},
     {kangaroo : "an oak rog"},
@@ -83,19 +83,36 @@ const pnagrams = [
 
 
     const poems = [
-      {poem:  "Oftentimes we seek for something more, Not quite sure what we're looking for. Every heart yearns to be complete.",
+        {poem: `Oftentimes we seek for something more, 
+        Not quite sure what we're looking for. 
+        Every heart yearns to be complete.`,
       answer:1},
-      {poem:"Tangled in a world of emotions so true, Our hearts beat as one, me and you, Understanding each other without a clue.",
-    answer:2},
-    {poem: "Tortured brushstrokes, colors blending, Hearts entwined, a passion unending, Revealing beauty in each stroke, Each creation, a love bespoke, Elevating emotions, a work of art.",
+    {poem: `Tortured brushstrokes, colors blending, 
+    Hearts entwined, a passion unending, 
+    Revealing beauty in each stroke, 
+    Each creation, a love bespoke, 
+    Elevating emotions, a work of art.`,
     answer:3 },
-    {poem:  "Fragile strokes on canvas, paint whispers secrets untold, Open hearts pour out their emotions, stories to be unfold, Unbridled passion ignites, ignites the creative soul, Romantic hues blend seamlessly, a masterpiece whole.",
+    {poem:  `Fragile strokes on canvas, paint whispers secrets untold, 
+    Open hearts pour out their emotions, stories to be unfold, 
+    Unbridled passion ignites, ignites the creative soul, 
+    Romantic hues blend seamlessly, a masterpiece whole.`,
     answer: 4},
-    {poem:  "Fingers intertwined, a canvas before us, Ink strokes and watercolor splashes merge, Vibrant colors, emotions they chorus, Every brushstroke a brush with the divine.",
+    {poem:  `Fingers intertwined, a canvas before us, 
+    Ink strokes and watercolor splashes merge, 
+    Vibrant colors, emotions they chorus, 
+    Every brushstroke a brush with the divine.`,
     answer: 5},
-    {poem: "Sculpting feelings in clay, Expressing emotions in every way, Vibrant colors paint the heart, Enveloping love in every art, Nurturing passions like a seed.",
+    {poem: `Sculpting feelings in clay, 
+    Expressing emotions in every way, 
+    Vibrant colors paint the heart, 
+    Enveloping love in every art, 
+    Nurturing passions like a seed.`,
     answer: 7},
-    {poem: "Nurturing feelings, blossoming in art, Intense passions fueling every part, New depths of emotions we explore, Endless expressions to adore."
+    {poem: `Nurturing feelings, blossoming in art, 
+    Intense passions fueling every part, 
+    New depths of emotions we explore, 
+    Endless expressions to adore.`
     answer: 9},
    ]
 
