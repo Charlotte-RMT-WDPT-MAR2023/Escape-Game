@@ -19,6 +19,7 @@ let speedX = 0;
 let speedY = 0;
 let playerX = 250;
 let playerY = 250;
+let door1 = true;
 
 //player control
 document.onkeydown = (event) => {
@@ -31,6 +32,8 @@ document.onkeydown = (event) => {
             break;
         case 'ArrowDown': speedY = speedY + 5;
             break;
+        // case 'ArrowDown': speedY = speedY + 5;
+        //     break;
     }
 }
 document.onkeyup = (event) => {
@@ -42,9 +45,9 @@ speedY = 0;
 function maze(){
     playerUpdate();
     drawMaze();
+    door();
     playerWall();
     playerDraw();
-    
 
     
 }
@@ -100,4 +103,25 @@ function drawMaze(){
     ctx.rect(50+5*50, 50+2*50, 50*1, 50*3);
     ctx.rect(50+4*50, 50+2*50, 50*1, 50*1);
     ctx.fill();
+}
+
+//door
+function door(){
+    if(door1 === true){
+    ctx.beginPath();
+    ctx.fillStyle = "green";
+    ctx.rect(200, 195, 50, 5)
+    ctx.fill();
+    if(playerY < 210 && playerX > 200 && playerX < 250){playerY = 210;}
+    if(playerY===210 && playerX > 200 && playerX < 250){
+        ctx.beginPath();
+        ctx.fillStyle = "green";
+        ctx.rect(600, 50, 250, 500)
+        ctx.fill();
+        document.onkeypress = (event) => {
+            if(event.key === 'e'){
+                document.onkeypress = null;
+                door1 = false;}}
+    }
+    }
 }
